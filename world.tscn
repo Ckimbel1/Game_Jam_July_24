@@ -1,3 +1,38 @@
-[gd_scene format=3 uid="uid://dp17n5veh6rbe"]
+[gd_scene load_steps=5 format=3 uid="uid://dp17n5veh6rbe"]
+
+[ext_resource type="Texture2D" uid="uid://cfjejjrooqd0c" path="res://Thick.png" id="1_qfada"]
+[ext_resource type="Texture2D" uid="uid://boa5ec3ldhsqp" path="res://Thin.png" id="2_1yqpf"]
+[ext_resource type="Texture2D" uid="uid://bajpjnsrf675x" path="res://Wide.png" id="3_vqy7r"]
+[ext_resource type="Texture2D" uid="uid://bhtw11gpxjoam" path="res://White_background_color.png" id="4_k8o1g"]
 
 [node name="World" type="Node2D"]
+
+[node name="Thick_WPL" type="Sprite2D" parent="."]
+position = Vector2(49, 72)
+scale = Vector2(0.135417, 0.139844)
+texture = ExtResource("1_qfada")
+
+[node name="Thin_WPL" type="Sprite2D" parent="."]
+position = Vector2(85, 155)
+scale = Vector2(0.176042, 0.130469)
+texture = ExtResource("2_1yqpf")
+
+[node name="Thin_WPL2" type="Sprite2D" parent="."]
+position = Vector2(296.042, 41.0625)
+scale = Vector2(0.45651, 0.149609)
+texture = ExtResource("2_1yqpf")
+
+[node name="wide_WPL" type="Sprite2D" parent="."]
+position = Vector2(151.667, 112.375)
+scale = Vector2(0.135417, 0.108594)
+texture = ExtResource("3_vqy7r")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="WhiteBackgroundColor" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(179, 101)
+scale = Vector2(1.11875, 0.628125)
+texture = ExtResource("4_k8o1g")
+metadata/_edit_lock_ = true
